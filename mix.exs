@@ -104,7 +104,9 @@ defmodule Timber.Ecto.MixProject do
   defp deps do
     [
       {:ecto, "~> 3.0"},
-      {:timber, "~> 3.1"},
+      {:timber,
+       git: "https://github.com/treble37/timber-elixir.git",
+       branch: "handle-hackney-exit"},
 
       #
       # Tooling
